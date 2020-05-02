@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+	<div id="container">
+		<header id="header" class="">
+			<h1 id="title">freeCodeCamp Survey Form</h1>
+			<p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+		</header><!-- /header -->
+		<form id="survey-form" action="" method="get" accept-charset="utf-8">
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label>
+				<input class="form-control" type="text" name="Name" id="name" placeholder="Enter your name" required>
+			</div>
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label>
+				<input class="form-control" type="email" name="Email" id=email placeholder="Enter your Email" required>
+			</div>
+			<div class="form-group">
+				<label id="number-label" for="number">Age(optional)</label>
+				<input id="number" class="form-control" type="number" name="Number"
+					min="0" max="99" placeholder="Age">
+			</div>
+			<div class="form-group">
+				<p>What is your favorite feature of freeCodeCamp?</p>
+				<div form-group>
+					<select id="dropdown" name="role" class="form-control">
+						<option selected value disabled>Select current role</option>
+						<option value="Student">Student</option>
+						<option value="Full time job">Full time job</option>
+						<option value="Full time learner">Full time learner</option>
+						<option value="Prefer not to stay">Prefer not to stay</option>
+						<option value="Orther">Orther</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<p>Would you recommend freeCodeCamp to a friend?</p>
+				<ul>
+					<li><label><input type="radio" name="radio" value="Definitely" class="input-radio" checked>Definitely</label></li>
+
+					<li><label><input type="radio" name="radio" class="input-radio" value="Maybe">Maybe</label></li>
+					<li><label><input type="radio" name="radio" class="input-radio" value="NotSure">Not Sure</label></li>
+				</ul>
+			</div>
+			<div class="form-group">
+				<p>What is your favorite feature of freeCodeCamp?</p>
+				<select id="dropdown" class="form-control">
+					<option selected value disabled>Select an option</option>
+					<option value="Challenges">Challenges</option>
+					<option value="Projects">Projects</option>
+					<option value="Community">Community</option>
+					<option value="Open Source">Open Source</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<p>What would you like to see improved? (Check all that apply)</p>
+				<ul>
+					<li><label><input type="checkbox" name="" value="FrontEndProject">Front-end Projects</label></li>
+					<li><label><input type="checkbox" name="" value="BackEnd">Back-end Projects</label></li>
+					<li><label><input type="checkbox" name="" value="DataVisualization">Data Visualization</label></li>
+					<li><label><input type="checkbox" name="" value="Challenges">Challenges</label></li>
+					<li><label><input type="checkbox" name="" value="OpenSourceCommunity">Open Source Community</label></li>
+					<li><label><input type="checkbox" name="" value="GitterHelpRooms">Gitter help rooms</label></li>
+					<li><label><input type="checkbox" name="" value="Videos">Videos</label></li>
+					<li><label><input type="checkbox" name="" value="CityMeetups">City Meetups
+					</label></li>
+					<li><label><input type="checkbox" name="" value="Wiki">Wiki</label></li>
+					<li><label><input type="checkbox" name="" value="Forum">Forum</label></li>
+					<li><label><input type="checkbox" name="" value="AdditionalCourses">Additional Courses</label></li>
+				</ul>
+			</div>
+
+			<div class="form-group">
+				<h5>Any comments or suggestions?</h5>
+				<textarea id="textarea" class="form-control" name="comment" placeholder="Enter your comment here..."></textarea>
+			</div>	
+
+			<div class="form-group submit">
+				<input id="submit" class="form-control" type="submit" name="Submit">
+
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
